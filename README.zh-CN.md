@@ -6,7 +6,7 @@ GitHub repo 健康度分析暂缓，除非直接服务 MCP 风险证据。
 
 ## 状态
 
-`P3` - deferred decision repository。
+`v0.1.0` - deferred repo-health decision 和 mcp-risk-index dimension source。
 
 ## 目的
 
@@ -14,7 +14,9 @@ Avoid a generic repo health analyzer that weakens the Safe Agent Operations sign
 
 ## 第一生产化表面
 
-Decision log and reusable repo-health dimensions for mcp-risk-index.
+Decision log 和可复用 repo-health dimensions，用于 `mcp-risk-index`。
+
+v0.1.0 明确不发布泛 OSS scorecard、dashboard 或 CLI。
 
 ## 必要证据
 
@@ -22,6 +24,10 @@ Decision log and reusable repo-health dimensions for mcp-risk-index.
 - rejected generic checks
 - risk-index mapping
 - evidence criteria
+
+## 决策
+
+泛 repository health analysis 暂缓。只保留能直接支持 MCP risk review 的证据型维度。
 
 ## 非目标
 
@@ -40,6 +46,9 @@ Decision log and reusable repo-health dimensions for mcp-risk-index.
 ## 文档
 
 - [产品基础](./docs/product-foundation.md)
+- [Defer Decision](./docs/defer-decision.md)
+- [Risk Index Dimensions](./docs/risk-index-dimensions.md)
+- [Review Runbook](./docs/review-runbook.md)
 - [OPT Overlay](./ops/opt-overlay.md)
 - [生产约束](./ops/constraints/production.md)
 - [主入口约束](./ops/constraints/main-entry.md)
