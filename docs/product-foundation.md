@@ -3,7 +3,7 @@
 ## Intake
 
 - Priority: P3
-- Status: deferred decision repository
+- Status: v0.1.0 deferred repo-health decision and mcp-risk-index dimension source
 - Positioning: GitHub repository health analysis is deferred unless it directly supports MCP risk evidence.
 - Primary route: Product -> Architecture -> Expert/Security -> QA -> Implementation -> Completion readiness
 
@@ -38,6 +38,8 @@ Avoid a generic repo health analyzer that weakens the Safe Agent Operations sign
 - The first production surface is local-first or review-first, not a hosted dashboard by default.
 - Reports, packets, indexes, or labs must be redaction-safe by design.
 - Every risky claim links to evidence, rule logic, or an explicit limitation.
+- The repository explicitly defers generic OSS scorecards.
+- Allowed repo-health dimensions map to `mcp-risk-index` evidence fields.
 
 ## Architecture Brief
 
@@ -50,7 +52,7 @@ Avoid a generic repo health analyzer that weakens the Safe Agent Operations sign
 ### Data Flow
 
 ```text
-input evidence -> normalize -> redact -> evaluate -> render reviewable artifact
+repo-health idea -> evidence-backed dimension check -> move to mcp-risk-index / watch / reject / reopen
 ```
 
 ### Risks
@@ -61,18 +63,19 @@ input evidence -> normalize -> redact -> evaluate -> render reviewable artifact
 
 ## QA Plan
 
-- Unit-test redaction and normalization before rule or report expansion.
-- Add positive and negative fixtures for every behavior boundary.
-- Verify generated artifacts do not include raw secrets.
+- Verify no docs imply a generic scorecard exists.
+- Verify every kept dimension has evidence source and destination.
+- Verify dimensions do not create unsupported trust or safety labels.
 - Keep bilingual README guidance aligned.
 
 ## Implementation Plan
 
-1. Keep this foundation branch small and reviewable.
-2. Add the first executable surface only after the missing inputs are resolved or explicitly skipped.
-3. Use feature branches named `feat/<scope>` or `docs/<scope>`.
-4. Use Conventional/Angular commits such as `feat: add packet schema` or `docs: clarify deferred scope`.
-5. Never push directly to `main`; open a pull request from the feature branch.
+1. Keep this as a decision repository until reopen criteria are met.
+2. Move useful dimensions into `mcp-risk-index`.
+3. Reject generic repo-health scoring ideas.
+4. Use feature branches named `docs/<scope>`.
+5. Use Conventional/Angular commits such as `docs: define risk index dimensions`.
+6. Never push directly to `main`; open a pull request from the feature branch.
 
 ## Skipped Inputs
 

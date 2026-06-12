@@ -6,7 +6,7 @@ GitHub repository health analysis is deferred unless it directly supports MCP ri
 
 ## Status
 
-`P3` - deferred decision repository.
+`v0.1.0` - deferred repo-health decision and mcp-risk-index dimension source.
 
 ## Purpose
 
@@ -14,7 +14,9 @@ Avoid a generic repo health analyzer that weakens the Safe Agent Operations sign
 
 ## First Production Surface
 
-Decision log and reusable repo-health dimensions for mcp-risk-index.
+Decision log and reusable repo-health dimensions for `mcp-risk-index`.
+
+This repository intentionally does not ship a generic OSS scorecard, dashboard, or CLI in v0.1.0.
 
 ## Required Evidence
 
@@ -22,6 +24,10 @@ Decision log and reusable repo-health dimensions for mcp-risk-index.
 - rejected generic checks
 - risk-index mapping
 - evidence criteria
+
+## Decision
+
+Generic repository health analysis is deferred. Only evidence-backed dimensions that directly support MCP risk review remain in scope.
 
 ## Non-Goals
 
@@ -40,6 +46,9 @@ Inputs that require user or real-world data are recorded in `../x-one-skipped-in
 ## Docs
 
 - [Product Foundation](./docs/product-foundation.md)
+- [Defer Decision](./docs/defer-decision.md)
+- [Risk Index Dimensions](./docs/risk-index-dimensions.md)
+- [Review Runbook](./docs/review-runbook.md)
 - [OPT Overlay](./ops/opt-overlay.md)
 - [Production Constraints](./ops/constraints/production.md)
 - [Main Entry Constraints](./ops/constraints/main-entry.md)
