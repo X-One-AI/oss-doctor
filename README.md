@@ -31,7 +31,7 @@ This repository intentionally does not ship a generic OSS scorecard, dashboard, 
 
 Generic repository health analysis is deferred. Only evidence-backed dimensions that directly support MCP risk review remain in scope.
 
-New ideas should be classified as `absorb`, `article`, `watch`, or `reject`.
+New ideas should be classified as `move-to-risk-index`, `watch`, `reject`, or `reopen`.
 
 ## Non-Goals
 

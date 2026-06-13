@@ -31,7 +31,7 @@ v0.1.0 明确不发布泛 OSS scorecard、dashboard 或 CLI。
 
 泛 repository health analysis 暂缓。只保留能直接支持 MCP risk review 的证据型维度。
 
-新想法应分类为 `absorb`、`article`、`watch` 或 `reject`。
+新想法应分类为 `move-to-risk-index`、`watch`、`reject` 或 `reopen`。
 
 ## 非目标
 
