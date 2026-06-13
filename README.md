@@ -2,6 +2,8 @@
 
 Languages: English | [中文](./README.zh-CN.md)
 
+> This is a decision repository, not an active product build. It exists to absorb, reject, or route ideas back into the released Safe Agent Operations tools.
+
 GitHub repository health analysis is deferred unless it directly supports MCP risk evidence.
 
 ## Status
@@ -28,6 +30,8 @@ This repository intentionally does not ship a generic OSS scorecard, dashboard, 
 ## Decision
 
 Generic repository health analysis is deferred. Only evidence-backed dimensions that directly support MCP risk review remain in scope.
+
+New ideas should be classified as `move-to-risk-index`, `watch`, `reject`, or `reopen`.
 
 ## Non-Goals
 
