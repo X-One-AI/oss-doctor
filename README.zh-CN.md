@@ -2,6 +2,8 @@
 
 语言： [English](./README.md) | 中文
 
+> 这是一个决策仓库，不是活跃产品构建。它用于吸收、拒绝或将想法路由回已发布的 Safe Agent Operations 工具。
+
 GitHub repo 健康度分析暂缓，除非直接服务 MCP 风险证据。
 
 ## 状态
@@ -28,6 +30,8 @@ v0.1.0 明确不发布泛 OSS scorecard、dashboard 或 CLI。
 ## 决策
 
 泛 repository health analysis 暂缓。只保留能直接支持 MCP risk review 的证据型维度。
+
+新想法应分类为 `absorb`、`article`、`watch` 或 `reject`。
 
 ## 非目标
 
