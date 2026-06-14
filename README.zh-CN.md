@@ -51,6 +51,7 @@ v0.1.0 明确不发布泛 OSS scorecard、dashboard 或 CLI。
 
 - [产品基础](./docs/product-foundation.md)
 - [Defer Decision](./docs/defer-decision.md)
+- [Governance Contract](./docs/governance-contract.md)
 - [Risk Index Dimensions](./docs/risk-index-dimensions.md)
 - [Review Runbook](./docs/review-runbook.md)
 - [OPT Overlay](./ops/opt-overlay.md)

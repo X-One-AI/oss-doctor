@@ -20,6 +20,7 @@ jobs:
           test -f AGENTS.md
           test -f docs/product-foundation.md
           test -f docs/defer-decision.md
+          test -f docs/governance-contract.md
           test -f docs/risk-index-dimensions.md
           test -f docs/review-runbook.md
           test -f ops/opt-overlay.md
@@ -31,6 +32,8 @@ jobs:
           grep -q "does not ship a generic OSS scorecard" README.md
           grep -q "OSS scorecard" README.zh-CN.md
           grep -q "Do not build" docs/defer-decision.md
+          grep -q "Absorption Contract" docs/governance-contract.md
+          grep -q "Rejection Contract" docs/governance-contract.md
           grep -q "Risk Index Dimensions" docs/risk-index-dimensions.md
           grep -q "move-to-risk-index" docs/review-runbook.md
           grep -q "Do not modify OPT" ops/opt-overlay.md
