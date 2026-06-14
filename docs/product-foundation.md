@@ -40,6 +40,7 @@ Avoid a generic repo health analyzer that weakens the Safe Agent Operations sign
 - Every risky claim links to evidence, rule logic, or an explicit limitation.
 - The repository explicitly defers generic OSS scorecards.
 - Allowed repo-health dimensions map to `mcp-risk-index` evidence fields.
+- Governance defines how repository-health facts are absorbed, rejected, watched, or reconsidered without creating scores.
 
 ## Architecture Brief
 
@@ -73,9 +74,10 @@ repo-health idea -> evidence-backed dimension check -> move to mcp-risk-index / 
 1. Keep this as a decision repository until reopen criteria are met.
 2. Move useful dimensions into `mcp-risk-index`.
 3. Reject generic repo-health scoring ideas.
-4. Use feature branches named `docs/<scope>`.
-5. Use Conventional/Angular commits such as `docs: define risk index dimensions`.
-6. Never push directly to `main`; open a pull request from the feature branch.
+4. Run the governance contract before each `mcp-risk-index` catalog release.
+5. Use feature branches named `docs/<scope>`.
+6. Use Conventional/Angular commits such as `docs: define risk index dimensions`.
+7. Never push directly to `main`; open a pull request from the feature branch.
 
 ## Skipped Inputs
 
